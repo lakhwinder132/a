@@ -18,5 +18,5 @@ app.get("/host",(req,res)=>{
 });
 
 app.listen(3001,()=>{
-    console.log("listening on pot 3000");
+    console.log("listening on port 3000");
 });
