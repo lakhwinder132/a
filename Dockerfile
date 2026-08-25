@@ -3,10 +3,9 @@ FROM node:22
 WORKDIR /
 
 COPY ./package.json ./package.json
-COPY ./bin.ts ./bin.ts
-COPY ./tsconfig.json ./tsconfig.json
-COPY ./index.ts ./index.ts
+COPY ./bin.js ./bin.js
+COPY ./index.js ./index.js
 
 RUN npm install
 
-CMD ["node","bin.ts"]
+CMD ["node","bin.js"]
